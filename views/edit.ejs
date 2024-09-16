@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document set to universal character set-->
+    <meta charset="UTF-8">
+
+    <!-- sets width of webpage to device (Helps to scale universally across devices)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Post</title>
+
+    <!--  link css file -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <h1>Edit Post</h1>
+
+    <!--  form for updated edited posts to be sent to server-->
+    <form action="/edit/<%= post.id %>" method="POST">
+
+        <!--  edit title -->
+        <label for="title">Post Title</label><br>
+        <input type="text" id="title" name="title" value="<%= post.title %>" required><br><br>
+
+        <!-- edit body -->
+        <label for="BodyText">Post Body</label><br>
+        <textarea id="BodyText" name="bodyText" rows="5" cols="50" required><%= post.bodyText %></textarea><br><br>
+
+        <!-- edit Username -->
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" value="<%= post.username %>" required><br><br>
+
+        <!-- edit date-->
+        <label for="date">Date</label><br>
+        <input type="text" id="date" name="date" value="<%= post.date %>" required><br><br>
+
+        <button type="submit">Update Post</button>
+    </form>
+</body>
+</html>

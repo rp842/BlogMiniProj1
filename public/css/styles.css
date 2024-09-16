@@ -1,0 +1,51 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: url('/spiders.webp') no-repeat center center fixed; 
+    background-size: cover; 
+    color: white;
+}
+
+header, .content {
+    position: relative; 
+    z-index: 1;
+    font-style: italic;
+    font-size: 25px;
+}
+
+form, .post {
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Blippo', fantasy;
+}
+
+textarea {
+    font-size: 10px;
+    font-family: 'OCR A Std', monospace;
+    resize: none;
+}
+
+button {
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+}
+
+p {
+    font-family: 'Blippo', fantasy;
+    font-size: 30px;
+    text-align: center;
+}
